@@ -27,8 +27,14 @@ const plugin = {
 				trans(key, options) {
 					return lang.trans(key, options);
 				},
+				t(key, options) {
+					return this.trans(key, options);
+				},
 				choice(key, plural, options) {
 					return lang.choice(key, plural, options);
+				},
+				tc(key, plural, options) {
+					return this.choice(key, plural, options);
 				}
 			}
 		});
