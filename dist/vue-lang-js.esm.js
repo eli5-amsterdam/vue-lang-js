@@ -1,5 +1,5 @@
 /*!
- * vue-lang-js v1.0.0 
+ * vue-lang-js v1.0.2 
  * (c) 2017 undefined
  * Released under the MIT License.
  */
