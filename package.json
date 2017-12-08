@@ -1,7 +1,7 @@
 {
   "name": "vue-lang-js",
   "description": "A Vue.js Plugin",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": "Andre de Waard <andre@eli5.io>",
   "private": false,
   "bugs": {
