@@ -34,20 +34,30 @@ Vue.use(VueLang, {
 
 Get language string
 ```javascript
-    this.$lang.trans('auth.title')
-    this.$lang.trans('auth.title', { name: 'eli5' })
-
-    {{ trans('auth.title') }}
-    {{ trans('auth.title', { name: 'eli5' }) }}
+    this.$trans('auth.title')
+    this.$trans('auth.title', { name: 'eli5' })
+    {{ $trans('auth.title') }}
+    {{ $trans('auth.title', { name: 'eli5' }) }}
+    
+    // Alias
+    this.$t('auth.title')
+    this.$t('auth.title', { name: 'eli5' })
+    {{ $t('auth.title') }}
+    {{ $t('auth.title', { name: 'eli5' }) }}
 ```
 
 Get language string with plural
 ```javascript
-    this.$lang.choice('auth.title', int)
-    this.$lang.choice('auth.title', int, { name: 'eli5' })
+    this.$choice('auth.title', int)
+    this.$choice('auth.title', int, { name: 'eli5' })
+    {{ $choice('auth.title', int) }}
+    {{ $choice('auth.title', int, { name: 'eli5' }) }}
 
-    {{ choice('auth.title', int) }}
-    {{ choice('auth.title', int, { name: 'eli5' }) }}
+    // Alias
+    this.$tc('auth.title', int)
+    this.$tc('auth.title', int, { name: 'eli5' })
+    {{ $tc('auth.title', int) }}
+    {{ $tc('auth.title', int, { name: 'eli5' }) }}
 ```
 
 Set locale
