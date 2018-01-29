@@ -1,4 +1,4 @@
-# vue-lang-js
+# lang-js-vue
 
 This plugin is based on https://github.com/rmariuzzo/Lang.js
 

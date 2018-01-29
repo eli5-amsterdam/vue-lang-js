@@ -1,7 +1,7 @@
 {
-  "name": "vue-lang-js",
-  "description": "A Vue.js Plugin",
-  "version": "1.0.2",
+  "name": "@eli5/vue-lang-js",
+  "description": "Use lang.js inside Vue.js",
+  "version": "1.0.3",
   "author": "Andre de Waard <andre@eli5.io>",
   "private": false,
   "bugs": {
@@ -40,7 +40,7 @@
     "dist/vue-lang-js.common.js",
     "src"
   ],
-  "homepage": "https://github.com/eli5-amsterdam/vue-lang-js#readme",
+  "homepage": "https://www.eli5.io",
   "main": "dist/vue-lang-js.common.js",
   "module": "dist/vue-lang-js.esm.js",
   "unpkg": "dist/vue-lang-js.js",
