@@ -44,11 +44,7 @@
   "main": "dist/vue-lang-js.common.js",
   "module": "dist/vue-lang-js.esm.js",
   "unpkg": "dist/vue-lang-js.js",
-  "keywords": [
-    "plugin",
-    "vue",
-    "vuejs"
-  ],
+  "keywords": ["plugin", "vue", "vuejs"],
   "license": "MIT",
   "engines": {
     "node": ">= 6.0"
@@ -60,7 +56,8 @@
   "scripts": {
     "build": "node config/build.js",
     "clean": "rm -rf coverage && rm -rf dist/*.js* && rm ./*.log",
-    "dev": "cross-env BABEL_ENV=test webpack-dev-server --inline --hot --open --content-base ./test/unit/ --config config/webpack.dev.conf.js",
+    "dev":
+      "cross-env BABEL_ENV=test webpack-dev-server --inline --hot --open --content-base ./test/unit/ --config config/webpack.dev.conf.js",
     "lint": "eslint src test config"
   },
   "dependencies": {
