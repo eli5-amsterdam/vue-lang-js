@@ -1,7 +1,7 @@
 {
   "name": "@eli5/vue-lang-js",
   "description": "Use lang.js inside Vue.js",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "author": "Andre de Waard <andre@eli5.io>",
   "private": false,
   "bugs": {
