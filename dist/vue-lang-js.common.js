@@ -1,5 +1,5 @@
 /*!
- * vue-lang-js v1.0.3 
+ * vue-lang-js v1.3.1 
  * (c) 2018 undefined
  * Released under the MIT License.
  */
@@ -30,6 +30,17 @@ var plugin = {
       return lang.choice(key, plural, options);
     };
 
+    var hasTranslation = function (key) {
+      return lang.has(key);
+    };
+
+    var ifTranslation = function (key, objectKey) {
+      if (hasTranslation(key)) {
+        return translate(key);
+      }
+      return objectKey;
+    };
+
     // Language object
     Vue.prototype.$lang = Vue.lang = lang;
 
@@ -39,6 +50,11 @@ var plugin = {
 
     Vue.prototype.$choice = pluralTranslate;
     Vue.prototype.$tc = pluralTranslate;
+
+    Vue.prototype.$has = hasTranslation;
+    
+    Vue.prototype.$ifTrans = ifTranslation;
+    Vue.prototype.$it = ifTranslation;
 
     Vue.mixin({
       beforeCreate: function beforeCreate() {

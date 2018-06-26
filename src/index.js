@@ -21,6 +21,17 @@ const plugin = {
       return lang.choice(key, plural, options);
     };
 
+    const hasTranslation = (key) => {
+      return lang.has(key);
+    };
+
+    const ifTranslation = (key, objectKey) => {
+      if (hasTranslation(key)) {
+        return translate(key);
+      }
+      return objectKey;
+    };
+
     // Language object
     Vue.prototype.$lang = Vue.lang = lang;
 
@@ -30,6 +41,11 @@ const plugin = {
 
     Vue.prototype.$choice = pluralTranslate;
     Vue.prototype.$tc = pluralTranslate;
+
+    Vue.prototype.$has = hasTranslation;
+    
+    Vue.prototype.$ifTrans = ifTranslation;
+    Vue.prototype.$it = ifTranslation;
 
     Vue.mixin({
       beforeCreate() {
