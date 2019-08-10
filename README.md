@@ -26,7 +26,7 @@ import VueLang from '@eli5/vue-lang-js'
 Vue.use(VueLang, {
     messages: source, // Provide locale file
     locale: 'nl', // Set locale
-    fallback: 'en' // Set fallback lacale
+    fallback: 'en' // Set fallback locale
 })
 ```
 
